@@ -310,6 +310,12 @@ a {
           box-shadow: 0 0 .5em .1em green;
 }
 
+.project .base .laptop-footer {
+  font-size: 11px;
+  margin-top: 17px;
+  margin-left: 6%;
+}
+
 .project .laptop-title {
   width: 80%;
   height: 17px;

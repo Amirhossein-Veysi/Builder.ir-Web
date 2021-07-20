@@ -138,7 +138,7 @@ $(document).ready(function(){
         const element = projects[i];
         let a = document.createElement('a')
         a.href = 'http://1353.ir/' + element.url, a.className = 'col-12 col-md-6 col-lg-4 my-5 project p-5 rounded'
-        a.innerHTML = '<div class="comp"><div class="monitor"><img src="image/Projects/' + element.imageUrl + '"></div><div class="base"><div class="circle"></div></div></div><p class="text-center laptop-title px-1">' + element.name +'</p>'
+        a.innerHTML = '<div class="comp"><div class="monitor"><img src="image/Projects/' + element.imageUrl + '"></div><div class="base"><div class="circle"></div><p class="laptop-footer">' + element.url + '</p></div></div><p class="text-center laptop-title px-1">' + element.name +'</p>'
         $('.project-container').append(a)
     }
 
