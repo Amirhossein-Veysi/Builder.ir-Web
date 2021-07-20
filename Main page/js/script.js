@@ -135,7 +135,7 @@ $(document).ready(function(){
     // Add projects to document
 
     for (let i = 0; i < projects.length; i++) {
-        const element = projects[i];
+        const element = projects[i]
         let a = document.createElement('a')
         if (element.url == '1353.ir' || element.url == 'sitebuilder.ir'){
             a.href = 'http://' + element.url

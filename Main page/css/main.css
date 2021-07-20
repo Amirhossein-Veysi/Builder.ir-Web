@@ -314,6 +314,7 @@ a {
   font-size: 11px;
   margin-top: 17px;
   margin-left: 6%;
+  direction: ltr;
 }
 
 .project .laptop-title {
