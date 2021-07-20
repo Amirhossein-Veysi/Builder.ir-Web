@@ -1,0 +1,34 @@
+// Import files to the main file
+@import 'mobile';
+@import 'tablet';
+@import 'desktop';
+@import 'assets';
+@import 'settings';
+@import 'all-devices';
+
+@keyframes fack {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .navbar{
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar-collapse{
+        background : rgba(0,0,0,0.7) !important;
+        backdrop-filter : blur(2px) !important;
+        transition: .4s !important;
+    }
+    // Contact image
+    .project-img{
+        border-radius: 5px;
+        box-shadow: 0 0 7px rgb(226, 226, 226);
+    }
+}

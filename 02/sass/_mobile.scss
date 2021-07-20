@@ -1,0 +1,19 @@
+@media only screen and (max-width: 576px) {
+    //Carousel
+    .carousel-caption{
+        position: absolute;
+        top: 10%;
+        p{
+            display: none;
+        }
+        h1{
+            font-size: 14px !important;
+        }
+    }
+
+    //About
+    .about-text{
+        width: 90%;
+        margin: auto;
+    }
+}
