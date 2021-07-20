@@ -3,6 +3,7 @@ $(document).ready(function(){
     //Changes that burn when page scrolled (Almost for navbar)
     $(window).scroll(function(){
         if ($(window).scrollTop() > 10){
+            $('meta')[2].content = '#333'
             $('.navbar').css({
                 'background' : 'rgba(0,0,0,0.7)',
                 'backdrop-filter' : 'blur(2px)',
@@ -10,6 +11,7 @@ $(document).ready(function(){
                 'box-shadow' : '0 0 7px #333'
             })
         }else{
+            $('meta')[2].content = '#fff'
             $('.navbar').css({
                 'background' : 'none',
                 'backdrop-filter' : 'unset',
