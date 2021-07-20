@@ -71,12 +71,12 @@ $(document).ready(function(){
             imageUrl : '9_Clicker.svg'
         },
         {
-            name : 'فرابازار، فراتر از هر بازار، بازارگاه بزرگ ایرانیان،',
+            name : 'بازارگاه بزرگ ایرانیان',
             url : 'farabazar.ir',
             imageUrl : '10_Farabazar.svg'
         },
         {
-            name : 'فروشگاه همیشه بیدار ایران، 7 روز هفته 24 ساعته',
+            name : 'فروشگاه همیشه بیدار ایران',
             url : 'eshop724.ir',
             imageUrl : '11_eShop724.svg'
         },
@@ -91,7 +91,7 @@ $(document).ready(function(){
             imageUrl : '13_Karbar.svg'
         },
         {
-            name : 'شبکه اجتماعی تخصصی همزادان ایران، بهمراه بانک اطلاعاتی طالع‌بینی',
+            name : 'شبکه اجتماعی تخصصی همزادان ایران',
             url : 'hamzad.ir',
             imageUrl : '14_Hamzad.svg'
         },
@@ -106,7 +106,7 @@ $(document).ready(function(){
             imageUrl : '16_FantasyFootball.svg'
         },
         {
-            name : 'شبکه اجتماعی تخصصی آشپزهای ایران، بهمراه سامانه جامع آشپزی،  بانک اطلاعاتی مراکز اغذیه',
+            name : 'شبکه اجتماعی تخصصی آشپزهای ایران',
             url : 'potage.ir',
             imageUrl : '17_Potage.svg'
         },
@@ -121,12 +121,12 @@ $(document).ready(function(){
             imageUrl : '19_Rebate.svg'
         },
         {
-            name : 'جنبش کارآفرینی ملی، آموزش و کسب درآمد',
+            name : 'جنبش کارآفرینی ملی',
             url : '2in1.ir',
             imageUrl : '20_2in1.svg'
         },
         {
-            name : 'شبکه اجتماعی تخصصی دامینرهای ایران، و سامانه اطلاع‌رسانی دامنه‌های اینترنتی',
+            name : 'شبکه اجتماعی تخصصی دامینرهای ایران',
             url : '7025.ir',
             imageUrl : '21_7025.svg'
         },
