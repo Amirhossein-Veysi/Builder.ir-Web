@@ -142,10 +142,4 @@ $(document).ready(function(){
         $('.project-container').append(a)
     }
 
-    // Make title for "laptop-title" elements
-
-    $('.laptop-title').attr('title', function(){
-        return this.innerHTML
-    })
-
 })
