@@ -34,92 +34,92 @@ $(document).ready(function(){
         },
         {
             name : 'خدمات طراحی سایت',
-            url : 'sitebuilder.ir',
+            url : 'SiteBuilder.ir',
             imageUrl : '2_SiteBuilder.svg'
         },
         {
             name : 'باشگاه متخصصین ایران',
-            url : 'expertclub.ir',
+            url : 'ExpertClub.ir',
             imageUrl : '3_ExpertClub.svg'
         },
         {
             name : 'سامانه جامع اطلاع‌رسانی',
-            url : 'hit.ir',
+            url : 'Hit.ir',
             imageUrl : '4_Hit.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی مدرسان ایران',
-            url : 'modaresan.ir',
+            url : 'Modaresan.ir',
             imageUrl : '5_Modaresan.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی هواداران فوتبال',
-            url : 'havadaran.ir',
+            url : 'Havadaran.ir',
             imageUrl : '6_Havadaran.svg'
         },
         {
             name : 'خدمات تخفیفی، اعتباری، تقسیطی',
-            url : 'cashback.ir',
+            url : 'CashBack.ir',
             imageUrl : '7_CashBack.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی بازارهای مالی ایران',
-            url : 'freesignal.ir',
+            url : 'FreeSignal.ir',
             imageUrl : '8_FreeSignal.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی کلیکرهای ایران',
-            url : 'clicker.ir',
+            url : 'Clicker.ir',
             imageUrl : '9_Clicker.svg'
         },
         {
             name : 'بازارگاه بزرگ ایرانیان',
-            url : 'farabazar.ir',
+            url : 'FaraBazar.ir',
             imageUrl : '10_Farabazar.svg'
         },
         {
             name : 'فروشگاه همیشه بیدار ایران',
-            url : 'eshop724.ir',
+            url : 'Eshop724.ir',
             imageUrl : '11_eShop724.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی بازاریابان شبکه‌ای ایران',
-            url : 'networkmarketing.ir',
+            url : 'NetworkMarketing.ir',
             imageUrl : '12_NetworkMarketing.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی کاربران اینترنتی',
-            url : 'karbar.ir',
+            url : 'Karbar.ir',
             imageUrl : '13_Karbar.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی همزادان ایران',
-            url : 'hamzad.ir',
+            url : 'Hamzad.ir',
             imageUrl : '14_Hamzad.svg'
         },
         {
             name : 'کافه سرگرمی',
-            url : 'funcafe.ir',
+            url : 'FunCafe.ir',
             imageUrl : '15_FunCafe.svg'
         },
         {
             name : 'فوتبال فانتزی',
-            url : 'fantasyfootball.ir',
+            url : 'FantasyFootball.ir',
             imageUrl : '16_FantasyFootball.svg'
         },
         {
             name : 'شبکه اجتماعی تخصصی آشپزهای ایران',
-            url : 'potage.ir',
+            url : 'Potage.ir',
             imageUrl : '17_Potage.svg'
         },
         {
             name : 'پایگاه دانش ',
-            url : 'asrandisheh.ir',
+            url : 'AsrAndisheh.ir',
             imageUrl : '18_AsrAndisheh.svg'
         },
         {
             name : 'سامانه اطلاع‌رسانی تخفیف',
-            url : 'rebate.ir',
+            url : 'Rebate.ir',
             imageUrl : '19_Rebate.svg'
         },
         {
@@ -139,7 +139,7 @@ $(document).ready(function(){
     for (let i = 0; i < projects.length; i++) {
         const element = projects[i]
         let a = document.createElement('a')
-        if (element.url == '1353.ir' || element.url == 'sitebuilder.ir'){
+        if (element.url == '1353.ir' || element.url == 'SiteBuilder.ir'){
             a.href = 'http://' + element.url
         }else{
             a.href = 'http://1353.ir/' + element.url

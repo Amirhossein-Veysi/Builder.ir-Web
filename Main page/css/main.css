@@ -250,6 +250,7 @@ a {
   -webkit-transition: .5s;
   transition: .5s;
   color: #999;
+  margin-top: 100px !important;
 }
 
 .project:hover {
@@ -313,7 +314,8 @@ a {
 .project .base .laptop-footer {
   font-size: 11px;
   margin-top: 17px;
-  margin-left: 6%;
+  width: 100%;
+  text-align: center;
   direction: ltr;
 }
 
