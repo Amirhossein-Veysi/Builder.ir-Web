@@ -79,7 +79,7 @@ $(document).ready(function(){
         },
         {
             name : 'فروشگاه همیشه بیدار ایران',
-            url : 'Eshop724.ir',
+            url : 'eShop724.ir',
             imageUrl : '11_eShop724.svg'
         },
         {

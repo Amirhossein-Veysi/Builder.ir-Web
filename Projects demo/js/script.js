@@ -7,32 +7,17 @@ $(document).ready(function(){
                 'background' : 'rgba(0,0,0,0.7)',
                 'backdrop-filter' : 'blur(2px)',
                 'height' : '60px',
-                'box-shadow' : '0 0 7px #333'
+                'box-shadow' : '0 0 7px #333',
+                'color' : '#fff'
             })
-            if ($(window).width() <= 767){
-                $('.navbar-collapse').css({
-                    'background' : 'rgba(0,0,0,0.7)',
-                    'backdrop-filter' : 'blur(2px)',
-                })
-            }else{
-                $('.navbar-collapse').css({
-                    'background' : 'unset',
-                    'backdrop-filter' : 'unset',
-                })
-            }
         }else{
             $('.navbar').removeClass('dark').css({
                 'background' : 'none',
                 'backdrop-filter' : 'unset',
                 'height' : '90px',
-                'box-shadow' : 'none'
+                'box-shadow' : 'none',
+                'color' : '#333'
             })
-            if ($(window).width() <= 767){
-                $('.navbar-collapse').css({
-                    'background' : 'unset',
-                    'backdrop-filter' : 'unset',
-                })
-            }
         }
     })
     
