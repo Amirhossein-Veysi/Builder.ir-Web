@@ -14,7 +14,7 @@
     right: -10px;
     width: 2px;
     height: 100px;
-    background: rgb(221, 221, 221);
+    background: rgb(14, 10, 10);
   }
 }
 
@@ -29,6 +29,10 @@
     &::placeholder{
       color: rgb(172, 172, 172);
     }
+  }
+  .alert{
+    opacity: 0;
+    transition: .4s;
   }
 }
 

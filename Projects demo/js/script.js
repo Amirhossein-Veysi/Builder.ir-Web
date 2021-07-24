@@ -23,4 +23,20 @@ $(document).ready(function(){
     
     // Make images undraggable
     $('img').attr('draggable',false)
+
+
+    // form validation
+
+    let emailRegEx = /[0-9a-zA-Z]+\@+[a-z]+\.+['com']/
+
+    $('form').submit(event =>{
+        if ( $('#email').val() == '' ){
+            event.preventDefault()
+            $('.alert').html('لطفا ایمیل خود را وارد کنید').css('opacity', '1')
+        }else if( !emailRegEx.test($('#email').val()) ){
+            event.preventDefault()
+            $('.alert').html('لطفا یک ایمیل معتبر وارد کنید').css('opacity', '1')
+        }
+    })
+
 })

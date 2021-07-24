@@ -28,7 +28,7 @@
         <div class="row mt-5 pt-5">
             <div class="col-10 m-auto mt-5 shadow-lg rounded-lg">
                 <div class="row" dir="rtl">
-                    <div class="col-12 col-lg-6 py-5">
+                    <div class="col-12 col-lg-7 py-5">
                         <!-- <img src="image/Group.jpg" class="project-img mt-3 m-sm-auto m-lg-none w-100"> -->
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner project-img">
@@ -51,11 +51,7 @@
                             <span class="sr-only">Next</span>
                           </a>
                         </div>
-                        <div class="row mt-4 px-4 justify-content-between">
-                            <div class="col-4 contact-way">
-                                <h4>آدرس</h4>
-                                <p class="text-muted mt-4">ایران، تهران <br> میدان ولیعصر (عج)</p>
-                            </div>
+                        <div class="row mt-4 px-4 justify-content-around">
                             <div class="col-4 contact-way">
                                 <h4>ایمیل</h4>
                                 <p class="text-muted mt-4">info@sitebuilder.ir</p>
@@ -66,27 +62,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <form class="p-5 form">
-                            <h2>در تماس باشید</h2>
-                            <p class="text-muted">آیا سوال یا بازخوردی برا ما دارید؟ <br> برای ارتباط با تیم ما فرم زیر را پر کنید.</p>
-                            <div class="form-row mt-3" dir="rtl">
-                                <div class="col">
-                                    <label for="#f-name" class="text-muted">نام کوچک</label>
-                                    <input type="text" class="form-control py-4" id="f-name" placeholder="نام کوچک خود را وارد کنید...">
-                                </div>
-                                <div class="col">
-                                    <label for="#l-name" class="text-muted">نام خانوادگی</label>
-                                    <input type="text" class="form-control py-4" id="l-name" placeholder="نام خانوادگی خود را وارد کنید...">
-                                </div>
+                    <div class="col-12 col-lg-5">
+                        <form class="p-5 form" action="https://formspree.io/f/gholamreza.saeadian@gmail.com" method="POST">
+                          <div class="alert alert-danger mb-4 text-center ">
+
+                          </div>
+                            <h2>فرم ارتباط با ما</h2>
+                            <p class="text-muted">پذیرای هرگونه نظر و  پیشنهاد از سوی شما دوستان و همکاران گرامی هستیم. با تشکر از حسن توجه شما</p>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control py-4" id="name" name="name" placeholder="نام و نام خانوادگی خود را وارد کنید...">
                             </div>
                             <div class="form-group mt-3">
-                                <label for="#email" class="text-muted">آدرس ایمیل</label>
-                                <input type="email" class="form-control py-4" id="email" placeholder="ایمیل خود را وارد کنید...">
+                                <input type="text" class="form-control py-4" id="email" name="email" placeholder="ایمیل خود را وارد کنید...">
                             </div>
                             <div class="form-group mt-3">
-                                <label for="#email" class="text-muted">پیام</label>
-                                <textarea type="email" class="form-control py-4" id="email" placeholder="پیام خود را وارد کنید..."></textarea>
+                                <input type="text" class="form-control py-4" id="phone" name="phone" placeholder="شماره تماس (واتس‌اپ) خود را وارد کنید...">
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea type="text" class="form-control py-4" id="message" name="message" placeholder="پیام خود را وارد کنید..."></textarea>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" value="ExpertClub.ir" name="project" class="d-none">
+                            </div>
+                            <div class="form-group">
+                              <button class="btn btn-success w-100 mt-3 py-2" type="submit">ارسال</button>
                             </div>
                         </form>
                     </div>

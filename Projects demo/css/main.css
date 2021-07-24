@@ -23,8 +23,7 @@
     padding: 5px;
   }
   .project-img {
-    margin-right: -15px !important;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px;
     -webkit-box-shadow: 0 0 20px #e2e2e2;
             box-shadow: 0 0 20px #e2e2e2;
   }
@@ -94,7 +93,7 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   right: -10px;
   width: 2px;
   height: 100px;
-  background: #dddddd;
+  background: #0e0a0a;
 }
 
 .form .form-control:focus {
@@ -127,6 +126,12 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 
 .form input::placeholder, .form textarea::placeholder {
   color: #acacac;
+}
+
+.form .alert {
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .copyright-area {
