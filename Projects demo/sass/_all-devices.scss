@@ -7,14 +7,14 @@
 // Contact ways
 .contact-way{
   position: relative;
-  font-size: 15px;
+  white-space: nowrap;
   &::before{
     content: '';
     position: absolute;
     right: -10px;
     width: 2px;
     height: 100px;
-    background: rgb(14, 10, 10);
+    background: #999;
   }
 }
 
@@ -22,17 +22,13 @@
 .form{
   .form-control:focus{color: #8e8e8e;background-color:#f8f7f7;border-color: none;outline:0;box-shadow:unset}
   input,textarea{
-    border: 0;
+    border: 1px solid rgb(221, 221, 221);
     direction: rtl;
     background: #f8f7f7;
     color: #8e8e8e;
     &::placeholder{
       color: rgb(172, 172, 172);
     }
-  }
-  .alert{
-    opacity: 0;
-    transition: .4s;
   }
 }
 

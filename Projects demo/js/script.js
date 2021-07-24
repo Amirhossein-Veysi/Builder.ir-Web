@@ -32,10 +32,10 @@ $(document).ready(function(){
     $('form').submit(event =>{
         if ( $('#email').val() == '' ){
             event.preventDefault()
-            $('.alert').html('لطفا ایمیل خود را وارد کنید').css('opacity', '1')
+            $('.alert').html('لطفا ایمیل خود را وارد کنید').addClass('d-block')
         }else if( !emailRegEx.test($('#email').val()) ){
             event.preventDefault()
-            $('.alert').html('لطفا یک ایمیل معتبر وارد کنید').css('opacity', '1')
+            $('.alert').html('لطفا یک ایمیل معتبر وارد کنید').addClass('d-block')
         }
     })
 

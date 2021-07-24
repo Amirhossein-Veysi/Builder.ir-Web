@@ -3,12 +3,20 @@
     width: 90%;
     margin: auto;
   }
+  .contact-way {
+    font-size: 12px !important;
+    margin-left: 40px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
   .navbar-collapse {
     margin-top: -16px;
     padding: 10px;
+  }
+  .contact-way {
+    font-size: 14px;
+    margin-left: 40px;
   }
 }
 
@@ -26,6 +34,13 @@
     border-radius: 5px;
     -webkit-box-shadow: 0 0 20px #e2e2e2;
             box-shadow: 0 0 20px #e2e2e2;
+  }
+  .contact-way {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  form {
+    margin-top: -5px;
   }
 }
 
@@ -84,7 +99,7 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 
 .contact-way {
   position: relative;
-  font-size: 15px;
+  white-space: nowrap;
 }
 
 .contact-way::before {
@@ -93,7 +108,7 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   right: -10px;
   width: 2px;
   height: 100px;
-  background: #0e0a0a;
+  background: #999;
 }
 
 .form .form-control:focus {
@@ -106,7 +121,7 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 }
 
 .form input, .form textarea {
-  border: 0;
+  border: 1px solid #dddddd;
   direction: rtl;
   background: #f8f7f7;
   color: #8e8e8e;
@@ -126,12 +141,6 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 
 .form input::placeholder, .form textarea::placeholder {
   color: #acacac;
-}
-
-.form .alert {
-  opacity: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
 }
 
 .copyright-area {
