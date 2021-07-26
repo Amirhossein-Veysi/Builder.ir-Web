@@ -17,7 +17,10 @@
       <div class="container-fluid">
         <div class="row fixed-top">
             <div class="col-12" dir="rtl">
-              <nav class="navbar navbar-expand-md navbar-light">
+              <nav class="navbar navbar-expand-md na  vbar-light">
+                <div class="navbar-brand">
+                  <a href="https://1353.ir" target="_blank"><img src="image/Home.png" width="50px" height="50px"></a>
+                </div>
                 <p class="h2 mx-auto">باشگاه متخصصین ایران</p>
               </nav>
             </div>
@@ -26,7 +29,7 @@
         <!--End of navbar-->
         <!--Start of main-->
         <div class="row mt-5 pt-5">
-            <div class="col-10 m-auto mt-5 shadow-lg rounded-lg">
+            <div class="col-10 m-auto mt-5 shadow-lg rounded-lg pt-5">
                 <div class="row" dir="rtl">
                     <div class="col-12 col-lg-7 py-5">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -60,7 +63,14 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-5">
-                        <form class="p-5 form" action="https://formspree.io/f/mdoylvjr" method="POST">
+                        <form class="p-5 form" action="send_mail/" method="POST">
+                          <?php 
+                              if (isset($_GET['sent'])){
+                                echo '<div class="alert alert-danger mb-4 text-center d-none">
+                                    ایمیل با موفقیت ارسال شد!
+                                </div>';
+                              }
+                          ?>
                           <div class="alert alert-danger mb-4 text-center d-none">
 
                           </div>
@@ -83,9 +93,6 @@
                             </div>
                             <div class="form-group">
                               <button class="btn btn-success w-100 mt-3 py-2" type="submit">ارسال</button>
-                            </div>
-                            <div class="logo mt-5">
-                              <a style="position: absolute;left: 10px;top: 90%;" href="https://sitebuilder.ir/Main%20page/"><img src="image/icon.jpg" width="50px" height="50px"></a>
                             </div>
                         </form>
                     </div>

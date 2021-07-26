@@ -2,6 +2,10 @@
 .navbar {
   transition: all .4s;
   height: 90px;
+  .navbar-brand{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 // Contact ways
@@ -26,6 +30,9 @@
     direction: rtl;
     background: #f8f7f7;
     color: #8e8e8e;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+    margin-top: 10%;
     &::placeholder{
       color: rgb(172, 172, 172);
     }

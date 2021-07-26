@@ -24,9 +24,6 @@
   .navbar {
     padding-top: 10px !important;
   }
-  .navbar .navbar-brand .logo {
-    margin-top: 15px;
-  }
   .navbar .navbar-nav li {
     padding: 5px;
   }
@@ -97,6 +94,11 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   height: 90px;
 }
 
+.navbar .navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .contact-way {
   position: relative;
   white-space: nowrap;
@@ -125,6 +127,9 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   direction: rtl;
   background: #f8f7f7;
   color: #8e8e8e;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+  margin-top: 10%;
 }
 
 .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
