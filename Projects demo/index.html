@@ -18,7 +18,7 @@
         <div class="row fixed-top">
             <div class="col-12" dir="rtl">
               <nav class="navbar navbar-expand-md na  vbar-light">
-                <div class="navbar-brand">
+                <div class="navbar-brand position-absolute">
                   <a href="https://1353.ir" target="_blank"><img src="image/Home.png" width="50px" height="50px"></a>
                 </div>
                 <p class="h2 mx-auto">باشگاه متخصصین ایران</p>
@@ -29,7 +29,7 @@
         <!--End of navbar-->
         <!--Start of main-->
         <div class="row mt-5 pt-5">
-            <div class="col-10 m-auto mt-5 shadow-lg rounded-lg pt-5">
+            <div class="col-10 m-auto shadow-lg rounded-lg">
                 <div class="row" dir="rtl">
                     <div class="col-12 col-lg-7 py-5">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -53,46 +53,39 @@
                             <span class="sr-only">Next</span>
                           </a>
                         </div>
-                        <div class="row mt-4 px-4 justify-content-around">
-                            <div class="col-4 contact-way">
-                                <p class="text-muted mt-4">ایمیل : info@1353.ir</p>
+                          <div class="d-flex mt-3 justify-content-between">
+                            <div class="contact-way">
+                                <p class="text-white"><span class="text-right">ایمیل</span> <span class="text-left">info@1353.ir</span></p>
                             </div>
-                            <div class="col-4 contact-way">
-                                <p class="text-muted mt-4" dir="ltr">شماره (واتس‌اپ) : 0919-919-1353</p>
+                            <div class="contact-way mr-0">
+                                <p class="text-white" dir="ltr"><span class="text-right">شماره (واتس‌اپ)</span> <span class="text-left">0919-353</span></p>
                             </div>
-                        </div>
+                          </div>
                     </div>
                     <div class="col-12 col-lg-5">
                         <form class="p-5 form" action="send_mail/" method="POST">
-                          <?php 
-                              if (isset($_GET['sent'])){
-                                echo '<div class="alert alert-danger mb-4 text-center d-none">
-                                    ایمیل با موفقیت ارسال شد!
-                                </div>';
-                              }
-                          ?>
-                          <div class="alert alert-danger mb-4 text-center d-none">
-
+                          <div class="alert alert-danger text-center fixed-bottom w-50 mx-auto">
+                            Fack this position
                           </div>
                             <h2>فرم ارتباط با ما</h2>
                             <p class="text-muted">پذیرای هرگونه نظر و  پیشنهاد از سوی شما دوستان و همکاران گرامی هستیم. با تشکر از حسن توجه شما</p>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control py-4" id="name" name="name" placeholder="لطفا نام و نام خانوادگی خود را وارد کنید...">
+                            <div class="form-group">
+                                <input type="text" class="form-control py-2" id="name" name="name" placeholder="لطفا نام و نام خانوادگی خود را وارد کنید...">
                             </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control py-4" id="email" name="email" placeholder="لطفا ایمیل خود را وارد کنید...">
+                            <div class="form-group">
+                                <input type="text" class="form-control py-2" id="email" name="email" placeholder="لطفا ایمیل خود را وارد کنید...">
                             </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control py-4" id="phone" name="phone" placeholder="لطفا شماره تماس (واتس‌اپ) خود را وارد کنید...">
+                            <div class="form-group">
+                                <input type="text" class="form-control py-2" id="phone" name="phone" placeholder="لطفا شماره تماس (واتس‌اپ) خود را وارد کنید...">
                             </div>
-                            <div class="form-group mt-3">
-                                <textarea type="text" class="form-control py-4" id="message" name="message" placeholder="لطفا پیام خود را وارد کنید..."></textarea>
+                            <div class="form-group">
+                                <textarea type="text" class="form-control py-2" id="message" name="message" placeholder="لطفا پیام خود را وارد کنید..."></textarea>
                             </div>
                             <div class="form-group">
                               <input type="text" value="ExpertClub.ir" name="project" class="d-none">
                             </div>
                             <div class="form-group">
-                              <button class="btn btn-success w-100 mt-3 py-2" type="submit">ارسال</button>
+                              <button class="btn btn-success w-100 mt-2 py-2" type="submit">ارسال</button>
                             </div>
                         </form>
                     </div>

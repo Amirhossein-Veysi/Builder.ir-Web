@@ -88,6 +88,12 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   background: #999;
 }
 
+.alert-danger {
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .navbar {
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -100,17 +106,25 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 }
 
 .contact-way {
+  width: 100%;
+  height: 40px;
+  background: #bebdbd;
+  -webkit-box-shadow: 0 0 5px #bebdbd;
+          box-shadow: 0 0 5px #bebdbd;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 40px;
   position: relative;
-  white-space: nowrap;
 }
 
-.contact-way::before {
-  content: '';
+.contact-way .text-left {
   position: absolute;
-  right: -10px;
-  width: 2px;
-  height: 100px;
-  background: #999;
+  left: 10%;
+}
+
+.contact-way .text-right {
+  position: absolute;
+  right: 10%;
 }
 
 .form .form-control:focus {
@@ -129,7 +143,6 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   color: #8e8e8e;
   padding-top: 5% !important;
   padding-bottom: 5% !important;
-  margin-top: 10%;
 }
 
 .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
