@@ -1,22 +1,38 @@
 <?php 
-function sanitize_my_email($field) {
-    $field = filter_var($field, FILTER_SANITIZE_EMAIL);
-    if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-$to_email = 'amirhossein_veysi@yahoo.com';
-$subject = 'Testing PHP Mail';
-$message = 'This mail is sent using the PHP mail ';
-$headers = 'From: noreply @ company. com';
-//check if the email address is invalid $secure_check
-$secure_check = sanitize_my_email($to_email);
-if ($secure_check == false) {
-    echo "Invalid input";
-} else { //send email 
-    mail($to_email, $subject, $message, $headers);
-    header('location: ../?sent=true');
-}
+    // Multiple recipients
+    $to = 'gholamreza.saeadian@gmail.com'; // note the comma
+    
+    // Subject
+    $subject = 'تماس از طرف : ' . $_POST['name'];
+    
+    // Message
+    $message = '
+    <html>
+    <head>
+      <title>Contact from ' . $_POST['name'] .'</title>
+    </head>
+    <body>
+      <p>پیام : ' . $_POST['message'] .'</p>
+      <table>
+        <tr>
+          <th>ایمیل</th><th>تلفن تماس</th><th>نام</th><th>صفحه مبدا</th>
+        </tr>
+        <tr>
+          <td>' . $_POST['email'] .'</td><td>' . $_POST['phone'] . '</td><td>' . $_POST['name'] . '</td><td>' . $_POST['project'] .'</td>
+        </tr>
+      </table>
+    </body>
+    </html>
+    ';
+    
+    // To send HTML mail, the Content-type header must be set
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'Content-type: text/html; charset=UTF-8';
+    
+    // Additional headers
+    $headers[] = $_POST['email'];
+    
+    // Mail it
+    mail($to, $subject, $message, implode("\r\n", $headers));
+    header('location : ../?sent=true');
 ?>

@@ -33,15 +33,9 @@ $(document).ready(function(){
         if ( $('#email').val() == '' ){
             event.preventDefault()
             $('.alert').html('لطفا ایمیل خود را وارد کنید').css('opacity', '1');
-            setTimeout(function(){
-                $('.alert').css('opacity', '0');
-            }, 1500);
         }else if( !emailRegEx.test($('#email').val()) ){
             event.preventDefault()
             $('.alert').html('لطفا یک ایمیل معتبر وارد کنید').css('opacity', '1');
-            setTimeout(function(){
-                $('.alert').css('opacity', '0');
-            }, 1500);
         }
     })
 
