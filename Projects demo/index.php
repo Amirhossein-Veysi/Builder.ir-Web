@@ -36,33 +36,73 @@
                           <div class="carousel-inner project-img">
                             <div class="carousel-item active">
                               <img class="d-block w-100" src="image/ExpertClub/1_Experts-cuate.svg" alt="First slide">
+                              <div class="layer">
+                                <div class="box text-center">
+                                  <p>فراخوان</p>
+                                  <p style="font-size: 1.4rem;">هلدینگ ارزش‌آفرینان خلاق پارسی</p>
+                                  <p>در زمینه جذب؛</p>
+                                  <p style="font-size: 1.25rem;">سرمایه <span style="font-size: .9rem;">(مالی، اعتباری و ...) </span></p>
+                                  <p style="font-size: 1.25rem;">حامی <span style="font-size: .9rem;">(تجاری، معنوی، رسانه‌ای، تبلیغاتی و ...) </span></p>
+                                  <p style="font-size: 1.25rem;">همکار <span style="font-size: .9rem;">(مدیریتی، فنی، کارشناسی و ...) </span></p>
+                                  <p style="font-size: 1.25rem;">کاربر <span style="font-size: .9rem;">(ویژه، عادی و ...) </span></p>
+                                </div>
+                              </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="image/ExpertClub/2_Doctors-bro.svg" alt="Second slide">
+                              <div class="layer">
+                                <div class="box text-center">
+                                  <p>باشگاه متخصصین ایران، با محوریت مشاوره، آموزش، پژوهش، تجارت و ایجاد یک شبکه از کارآفرینان و متخصصان، با تشکیل دپارتمان‌های پزشکان، روانشناسان، حسابداران، گردشگران، مترجمان، مدرسان، مدیران، مهندسان، ورزشکاران، هنرمندان و سایر کارشناسان</p>
+                                </div>
+                              </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="image/ExpertClub/4_Electrician-amico.svg" alt="Third slide">
+                              <div class="layer">
+                                <div class="box text-center">
+                                  <p>و با هدف هم‌اندیشی، هم‌افزایی و همکاری در بهبود کسب و کارها، همچنین استفاده بهینه از بستر لینکدین و پتانسیل آن، از شما متخصص گرامی دعوت به همکاری می‌نماید.</p>
+                                </div>
+                              </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="image/ExpertClub/5_Conference-pana.svg" alt="Third slide">
+                              <div class="layer">
+                                <div class="box text-center">
+                                  <p style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی باشگاه شامل موارد ذیل می‌باشد:</p>
+                                  <p>ایجاد اتاق فکر و ایده‌پردازی</p>
+                                  <p>ایجاد سامانه مشاوره و آموزش در سایر رشته‌های تخصصی</p>
+                                </div>
+                              </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="image/ExpertClub/6_Experts-rafiki.svg" alt="Third slide">
+                              <div class="layer">
+                                <div class="box text-center">
+                                  <p>ایجاد کسب و کارهای اینترنتی و نرم‌افزارهای کاربردی پیشنهادی</p>
+                                  <p>ایجاد استودیوی تولید محتوای مفید و کاربردی با اهداف مسئولیت اجتماعی، تبلیغاتی و درآمدزایی</p>
+                                </div>
+                              </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="image/ExpertClub/7_Resume folder-amico.svg" alt="Third slide">
+                              <div class="layer">
+                                <div class="box text-center">
+                                  <p>برگزاری همایش و سمینارهای عمومی و تخصصی</p>
+                                  <p>و ...</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                          <a class="carousel-control-prev text-dark" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="fas fa-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                           </a>
-                          <a class="carousel-control-next text-dark" href="#carouselExampleControls" role="button" data-slide="next">
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                             <span class="fas fa-chevron-left" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
                         </div>
-                          <div class="d-flex mt-3 justify-content-center">
+                          <div class="d-flex mt-3 justify-content-between">
                             <img src="image/Capture.JPG" class="w-100">
                           </div>
                     </div>
