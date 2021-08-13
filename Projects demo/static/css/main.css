@@ -165,13 +165,12 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 }
 
 .contact-way {
-  width: 45%;
+  width: 100%;
   height: 40px;
   background: #bebdbd;
   -webkit-box-shadow: 0 0 5px #bebdbd;
           box-shadow: 0 0 5px #bebdbd;
   border-radius: 5px;
-  font-size: 13px;
   color: #fff;
   line-height: 40px;
   position: relative;
@@ -179,12 +178,12 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 
 .contact-way .text-left {
   position: absolute;
-  left: 5%;
+  left: 10%;
 }
 
 .contact-way .text-right {
   position: absolute;
-  right: 5%;
+  right: 10%;
 }
 
 .form .form-control:focus {
@@ -219,55 +218,6 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
 
 .form input::placeholder, .form textarea::placeholder {
   color: #acacac;
-}
-
-.form .form-group .btn-light {
-  width: 90%;
-}
-
-.form .form-group .dropdown-menu {
-  background: #fff;
-  border-color: #fff;
-  border: 1px solid #dfe2e6;
-  display: none !important;
-}
-
-.form .form-group .dropdown-menu::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  right: 9px;
-  top: -16px;
-  border: 8px solid transparent;
-  border-bottom: 8px solid #dfe2e6;
-}
-
-.form .form-group .dropdown-menu::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  border: 7px solid transparent;
-  border-bottom: 7px solid #fff;
-  right: 10px;
-  top: -14px;
-}
-
-.form .form-group .dropdown-menu p {
-  direction: ltr;
-}
-
-.form .form-group .dropdown-menu input {
-  text-align: left;
-  width: 40%;
-  padding: 15px;
-  outline: 0;
-  border: 0;
-}
-
-.form .form-group .show {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
 }
 
 .copyright-area {

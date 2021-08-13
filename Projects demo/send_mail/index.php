@@ -12,7 +12,7 @@
       <title>Contact from ' . $_POST['name'] .'</title>
     </head>
     <body>
-      <p>پیام : ' . $_POST['message'] .'</p>
+      <p>پیام : ' . nl2br(htmlspecialchars($_POST['message'])) .'</p>
       <table>
         <tr>
           <th>ایمیل</th><th>تلفن تماس</th><th>نام</th><th>صفحه مبدا</th>
