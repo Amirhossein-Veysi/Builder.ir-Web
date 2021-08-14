@@ -51,8 +51,8 @@
 .contact-way{
   width: 45%;
   height: 40px;
-  background: rgb(190, 189, 189);
-  box-shadow: 0 0 5px rgb(190, 189, 189);
+  background: rgba($color: #FF725E, $alpha: .6);
+  box-shadow: 0 0 5px rgba($color: #FF725E, $alpha: .6);
   border-radius: 5px;
   font-size: 13px;
   color: #fff;
@@ -85,10 +85,12 @@
   .form-group{
     .btn-light{
       width: 90%;
+      margin-right: 10%;
     }
     .dropdown-menu{
       background: #fff;
       border-color: #fff;
+      margin-right: 10%;
       border: 1px solid #dfe2e6;
       display: none !important;
       // display: none;

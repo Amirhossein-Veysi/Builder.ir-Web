@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    let x = Math.floor(Math.random() * 99) + 1;
-    let y = Math.floor(Math.random() * 99) + 1;
+    let x = Math.floor(Math.random() * 49) + 1;
+    let y = Math.floor(Math.random() * 49) + 1;
 
     let canvas = document.getElementsByTagName('canvas')[0];
     let ctx = canvas.getContext("2d");
@@ -40,6 +40,7 @@ $(document).ready(function(){
 
     $('form').submit(event =>{
         if ($('.alert-success')) $('.alert-success').css('display', 'none');
+        $('.form-group .dropdown-menu').removeClass('show');
         if ( $('#email').val() == '' ){
             event.preventDefault();
             $('.alert-danger').html('لطفا ایمیل خود را وارد کنید').css('opacity', '1');
@@ -48,7 +49,7 @@ $(document).ready(function(){
             $('.alert-danger').html('لطفا یک ایمیل معتبر وارد کنید').css('opacity', '1');
         }else if(Number($('#cap').val()) !== x + y){
             event.preventDefault();
-            $('.alert-danger').html('لطفا هویت خود را به درستی تایید کنید').css('opacity', '1');
+            $('.alert-danger').html('اشتباه! لطفا محاسبه را دوباره انجام دهید').css('opacity', '1');
         }
     })
 
