@@ -7,7 +7,7 @@ $(document).ready(function(){
     let ctx = canvas.getContext("2d");
     ctx.font = "16px Arial";
     ctx.direction = "ltr";
-    ctx.fillText(`${x} + ${y} =`, 20, 30);
+    ctx.fillText(`${x} + ${y} =`, 5, 30);
 
     //Changes that burn when page scrolled (Almost for navbar)
     $(window).scroll(function(){
