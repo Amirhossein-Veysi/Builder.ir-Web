@@ -33,6 +33,9 @@
     $headers[] = $_POST['email'];
     
     // Mail it
-    mail($to, $subject, $message, implode("\r\n", $headers));
-    header('location : ../?sent=true');
+    // mail($to, $subject, $message, implode("\r\n", $headers));
+
+    $path = explode('.', $_POST['project'])[0];
+
+    header("location : ../../$path?sent=true");
 ?>
