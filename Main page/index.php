@@ -140,8 +140,9 @@
           <div class="col-12 mt-3">
               <div class="about-text text-center mt-4 pt-1">
                 <h1 class="mt-5"><strong>درباره ما</strong></h1>
-                <p class="text-justify mt-5">گروه طراحی سایت ایران نسخه بتای خود را، در یک تعامل سازنده و برد- برد با ایجاد بستری برای فعالیت جوانان مستعد و خلاق این مرز و بوم در زمینه ارائه خدمات مختلف حوزه وب، پیاده‌سازی نموده است.</p>
-                <p class="text-justify">انشالله این مجموعه پس از تکمیل همکاران خود در سایر تخصص‌های موردنیاز، برای نسخه نهایی اقدام به طراحی یک سامانه حرفه‌ای سایت‌ساز خواهد نمود.</p>
+                <p class="text-justify mt-5">گروه طراحی سایت ایران نسخه بتای خود را، در یک تعامل سازنده و برد-برد با ایجاد بستری برای فعالیت جوانان مستعد و خلاق این مرز و بوم در زمینه ارائه خدمات مختلف حوزه وب، پیاده‌سازی نموده است.</p>
+                <p class="text-justify">این همکاری علاوه بر روال معمول و رایج در قالب یک بستر استارتاپ استودیو نیز شکل خواهد گرفت.</p>
+                <p class="text-justify">انشالله این مجموعه پس از تکمیل همکاران خود در سایر تخصص‌های موردنیاز، برای نسخه نهایی اقدام به طراحی یک سامانه حرفه‌ای سایت‌ساز نیز خواهد نمود.</p>
               </div>
           </div>
         </div>
@@ -156,7 +157,7 @@
         </div>
         <div class="row flex-row-reverse">
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="#">
+              <a href="../services/index.php?link=WebDesign">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="far fa-object-group h1 mb-4"></i>
@@ -166,7 +167,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="#">
+              <a href="../services/index.php?link=Software">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-desktop h1 mb-4"></i>
@@ -176,7 +177,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="#">
+              <a href="../services/index.php?link=MarketPlace">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-shopping-cart h1 mb-4"></i>
@@ -186,7 +187,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-            <a href="#">
+            <a href="../services/index.php?link=Seo">
               <div class="card border-0 shadow text-center service">
                 <div class="card-body py-5">
                     <i class="fas fa-search-dollar h1 mb-4"></i>
@@ -198,7 +199,7 @@
         </div>
         <div class="row flex-row-reverse pb-5">
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="#">
+              <a href="../services/index.php?link=Content">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-indent h1 mb-4"></i>
@@ -208,7 +209,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="#">
+              <a href="../services/index.php?link=Social Network">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-share-alt h1 mb-4"></i>
@@ -218,7 +219,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="#">
+              <a href="../services/index.php?link=DomainHost">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-server h1 mb-4"></i>
@@ -228,7 +229,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-            <a href="#">
+            <a href="../services/index.php?link=SiteBuilder">
               <div class="card border-0 shadow text-center service">
                 <div class="card-body py-5">
                   <i class="fas fa-cogs h1 mb-4"></i>
@@ -338,7 +339,7 @@
           <div class="col-lg-7 mb-5">
               <div class="contact-form p-30">
                   <div id="success"></div>
-                  <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                  <form class="form" name="sentMessage" id="contactForm" novalidate="novalidate">
                       <div class="control-group">
                           <input type="text" class="form-control" id="name" placeholder="نام شما"
                               required="required" data-validation-required-message="Please enter your name" />
@@ -359,9 +360,25 @@
                               required="required"
                               data-validation-required-message="Please enter your message"></textarea>
                           <p class="help-block text-danger"></p>
+                      </div>  
+                      <div class="control-group captcha jusfify-content-center">
+                        <div class="d-flex">
+                          <canvas width="70px" height="50px"></canvas>
+                          <input type="text" class="mx-2" id="cap">
+                        </div>
+                        <button class="btn btn-light py-2 px-4 border" type="submit" id="sendMessageButton">ارسال پیام</button>
                       </div>
-                      <div>
-                          <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">ارسال پیام</button>
+                      <?php
+                        if (isset($_GET['sent'])){
+                      ?>
+                      <div class="alert alert-success text-center w-100 mx-auto mt-3">
+                            ایمیل با موفقیت ارسال شد
+                      </div>
+                      <?php
+                        }
+                      ?>
+                      <div class="alert alert-danger text-center w-100 mx-auto mt-3" style="opacity: 0;">
+                            
                       </div>
                   </form>
               </div>

@@ -1,13 +1,18 @@
 $(document).ready(function(){
 
-    let x = Math.floor(Math.random() * 49) + 1;
-    let y = Math.floor(Math.random() * 49) + 1;
+    // Generates the captcha code
+    function gnrtCptcha() {
+        let x = Math.floor(Math.random() * 49) + 1;
+        let y = Math.floor(Math.random() * 49) + 1;
 
-    let canvas = document.getElementsByTagName('canvas')[0];
-    let ctx = canvas.getContext("2d");
-    ctx.font = "16px Arial";
-    ctx.direction = "ltr";
-    ctx.fillText(`${x} + ${y} =`, 5, 30);
+        let canvas = document.getElementsByTagName('canvas')[0];
+        let ctx = canvas.getContext("2d");
+        ctx.font = "16px Arial";
+        ctx.direction = "ltr";
+        ctx.fillText(`${x} + ${y} =`, 5, 30);
+    }
+
+    gnrtCptcha(); //Call once the page loads
 
     //Changes that burn when page scrolled (Almost for navbar)
     $(window).scroll(function(){
@@ -50,8 +55,9 @@ $(document).ready(function(){
         }else if(Number($('#cap').val()) !== x + y){
             event.preventDefault();
             $('.alert-danger').html('اشتباه! لطفا محاسبه را دوباره انجام دهید').css('opacity', '1');
+            gnrtCptcha();
         }
-    })
+    });
 
     $('.form-group .btn-light').on('click', deDrpDwnHandler);
 
@@ -62,17 +68,10 @@ $(document).ready(function(){
     $(document).on('click', {foo : 'bar'} ,deDmClcHandler)
 
     function deDmClcHandler(event){
-        if (!event.target.matches('.dropdown-menu')){
-            if(!event.target.matches('.dropdown-item')){
-                if(!event.target.matches('input')){
-                    if (!event.target.matches('canvas')){
-                        if (!event.target.matches('.btn')){
-                            if ($('.form-group .dropdown-menu').hasClass('show')){
-                                $('.form-group .dropdown-menu').removeClass('show');
-                            }
-                        }
-                    }
-                }
+        if (!event.target.matches('.dropdown-menu') && !event.target.matches('.dropdown-item') && !event.target.matches('input')
+        && !event.target.matches('canvas') && !event.target.matches('.btn')){
+            if ($('.form-group .dropdown-menu').hasClass('show')){
+                $('.form-group .dropdown-menu').removeClass('show');
             }
         }
     }

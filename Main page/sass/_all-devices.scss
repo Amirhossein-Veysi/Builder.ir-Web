@@ -154,6 +154,7 @@ $codred: #ac5e47;
       width: 100%;
       text-align: center;
       direction: ltr;
+      margin-left: -20px;
     }
 }
 .laptop-title{
@@ -201,6 +202,53 @@ $codred: #ac5e47;
         text-align: right;
     }
 }
+
+// Form
+.form{
+  .form-control:focus{color: #8e8e8e;background-color:#f8f7f7;border-color: none;outline:0;box-shadow:unset}
+  input,textarea{
+    border: 1px solid rgb(221, 221, 221);
+    direction: rtl;
+    background: #f8f7f7;
+    color: #8e8e8e;
+    padding-top: 1% !important;
+    padding-bottom: 1% !important;
+    &::placeholder{
+      color: rgb(172, 172, 172);
+    }
+  }
+  .control-group{
+    .btn-light{
+      width: 35%;
+      margin-left: 20%;
+    }
+  }
+  .captcha{
+    background: #fff;
+    border-color: #fff;
+    display: flex;
+    p{
+      direction: ltr;
+    }
+    input{
+      text-align: left !important;
+      direction: ltr;
+      width: 50%;
+      height: 50px;
+      outline: 0 !important;
+      border: 0 !important;
+      padding-left: 15px;
+      border-radius: 0px 3px 3px 0px;
+    }
+    canvas{
+      background: #f1f1f1;
+      margin-right: -10px;
+      padding: 0px 10px;
+      border-radius: 3px 0px 0px 3px;
+    }
+  }
+}
+
 
 //Footer
 .copyright-area{

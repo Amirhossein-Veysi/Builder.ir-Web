@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    //! Variable
+    let emailRegEx = /[0-9a-zA-Z]+\@+[a-z]+\.+['com']/;
+    let projects;
+    let x,y;
+
     //Changes that burn when page scrolled (Almost for navbar)
     $(window).scroll(function(){
         if ($(window).scrollTop() > 10){
@@ -22,132 +27,72 @@ $(document).ready(function(){
     })
 
     // Make images undraggable
-    $('img').attr('draggable',false)
+    $('img').attr('draggable',false);
 
     // Projects
 
-    let projects = [
-        {
-            name : 'وب سایت شخصی',
-            url : '1353.ir',
-            imageUrl : '1_1353.svg'
-        },
-        {
-            name : 'خدمات طراحی سایت',
-            url : 'SiteBuilder.ir',
-            imageUrl : '2_SiteBuilder.svg'
-        },
-        {
-            name : 'باشگاه متخصصین ایران',
-            url : 'ExpertClub.ir',
-            imageUrl : '3_ExpertClub.svg'
-        },
-        {
-            name : 'سامانه جامع اطلاع‌رسانی',
-            url : 'Hit.ir',
-            imageUrl : '4_Hit.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی مدرسان ایران',
-            url : 'Modaresan.ir',
-            imageUrl : '5_Modaresan.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی هواداران فوتبال',
-            url : 'Havadaran.ir',
-            imageUrl : '6_Havadaran.svg'
-        },
-        {
-            name : 'خدمات تخفیفی، اعتباری، تقسیطی',
-            url : 'CashBack.ir',
-            imageUrl : '7_CashBack.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی بازارهای مالی ایران',
-            url : 'FreeSignal.ir',
-            imageUrl : '8_FreeSignal.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی کلیکرهای ایران',
-            url : 'Clicker.ir',
-            imageUrl : '9_Clicker.svg'
-        },
-        {
-            name : 'بازارگاه بزرگ ایرانیان',
-            url : 'FaraBazar.ir',
-            imageUrl : '10_Farabazar.svg'
-        },
-        {
-            name : 'فروشگاه همیشه بیدار ایران',
-            url : 'eShop724.ir',
-            imageUrl : '11_eShop724.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی بازاریابان شبکه‌ای ایران',
-            url : 'NetworkMarketing.ir',
-            imageUrl : '12_NetworkMarketing.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی کاربران اینترنتی',
-            url : 'Karbar.ir',
-            imageUrl : '13_Karbar.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی همزادان ایران',
-            url : 'Hamzad.ir',
-            imageUrl : '14_Hamzad.svg'
-        },
-        {
-            name : 'کافه سرگرمی',
-            url : 'FunCafe.ir',
-            imageUrl : '15_FunCafe.svg'
-        },
-        {
-            name : 'فوتبال فانتزی',
-            url : 'FantasyFootball.ir',
-            imageUrl : '16_FantasyFootball.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی آشپزهای ایران',
-            url : 'Potage.ir',
-            imageUrl : '17_Potage.svg'
-        },
-        {
-            name : 'پایگاه دانش ',
-            url : 'AsrAndisheh.ir',
-            imageUrl : '18_AsrAndisheh.svg'
-        },
-        {
-            name : 'سامانه اطلاع‌رسانی تخفیف',
-            url : 'Rebate.ir',
-            imageUrl : '19_Rebate.svg'
-        },
-        {
-            name : 'جنبش کارآفرینی ملی',
-            url : '2in1.ir',
-            imageUrl : '20_2in1.svg'
-        },
-        {
-            name : 'شبکه اجتماعی تخصصی دامینرهای ایران',
-            url : '7025.ir',
-            imageUrl : '21_7025.svg'
-        },
-    ]
-    
-    // Add projects to document
+    loadJson('js/projects.json').then(res => {
+        projects = res;
+    }).then(() => {
+        // Add projects to document
 
-    for (let i = 0; i < projects.length; i++) {
-        const element = projects[i]
-        let a = document.createElement('a')
-        if (element.url == '1353.ir' || element.url == 'SiteBuilder.ir'){
-            a.href = 'http://' + element.url
-        }else{
-            a.href = 'http://1353.ir/' + element.url
+        projects.forEach(element => {
+            let a = document.createElement('a');
+            if (element.url == '1353.ir' || element.url == 'SiteBuilder.ir'){
+                a.href = 'https://' + element.url;
+            }else{
+                let url = element.url.split('.');
+                url.pop();
+                a.href = 'https://1353.ir/' + url;
+            }
+            a.className = 'col-12 col-md-6 col-lg-4 my-5 project p-5 rounded';
+            a.innerHTML = '<div class="comp"><div class="monitor"><img src="image/Projects/' + element.imageUrl + '"></div><div class="base"><div class="circle"></div><p class="laptop-footer">' + element.url + '</p></div></div><p class="text-center laptop-title px-1">' + element.name +'</p>';
+            a.target = '_blank';
+            $('.project-container').append(a);
+        });
+    });
+
+    // form validation
+
+    $('form').submit(event =>{
+        if ($('.alert-success')) $('.alert-success').css('display', 'none');
+        $('.form-group .dropdown-menu').removeClass('show');
+        if ( $('#email').val() == '' ){
+            event.preventDefault();
+            $('.alert-danger').html('لطفا ایمیل خود را وارد کنید').css('opacity', '1');
+        }else if( !emailRegEx.test($('#email').val()) ){
+            event.preventDefault()
+            $('.alert-danger').html('لطفا یک ایمیل معتبر وارد کنید').css('opacity', '1');
+        }else if(Number($('#cap').val()) !== x + y){
+            event.preventDefault();
+            $('.alert-danger').html('اشتباه! لطفا محاسبه را دوباره انجام دهید').css('opacity', '1');
+            gnrtCptcha();
         }
-        a.className = 'col-12 col-md-6 col-lg-4 my-5 project p-5 rounded'
-        a.innerHTML = '<div class="comp"><div class="monitor"><img src="image/Projects/' + element.imageUrl + '"></div><div class="base"><div class="circle"></div><p class="laptop-footer">' + element.url + '</p></div></div><p class="text-center laptop-title px-1">' + element.name +'</p>'
-        a.target = '_blank'
-        $('.project-container').append(a)
+    });
+
+    // Generates the captcha code
+    function gnrtCptcha() {
+        x = Math.floor(Math.random() * 49) + 1;
+        y = Math.floor(Math.random() * 49) + 1;
+
+        let canvas = document.getElementsByTagName('canvas')[0];
+        let ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.font = "16px Arial";
+        ctx.direction = "ltr";
+        ctx.fillText(`${x} + ${y} =`, 5, 30);
     }
 
+    gnrtCptcha(); //Call once the page loads to generate captcha code
+
 })
+
+//! Function
+
+async function loadJson(url) {
+    let response = await fetch(url);
+
+    let res = await response.json();
+
+    return res;
+}
