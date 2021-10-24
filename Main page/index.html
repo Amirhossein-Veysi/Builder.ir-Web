@@ -157,7 +157,7 @@
         </div>
         <div class="row flex-row-reverse">
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="../services/index.php?link=WebDesign">
+              <a href="../services/index.php?link=WebDesign" target="_blank">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="far fa-object-group h1 mb-4"></i>
@@ -167,7 +167,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="../services/index.php?link=Software">
+              <a href="../services/index.php?link=Software" target="_blank">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-desktop h1 mb-4"></i>
@@ -177,7 +177,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="../services/index.php?link=MarketPlace">
+              <a href="../services/index.php?link=MarketPlace" target="_blank">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-shopping-cart h1 mb-4"></i>
@@ -187,7 +187,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-            <a href="../services/index.php?link=Seo">
+            <a href="../services/index.php?link=Seo" target="_blank">
               <div class="card border-0 shadow text-center service">
                 <div class="card-body py-5">
                     <i class="fas fa-search-dollar h1 mb-4"></i>
@@ -199,7 +199,7 @@
         </div>
         <div class="row flex-row-reverse pb-5">
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="../services/index.php?link=Content">
+              <a href="../services/index.php?link=Content" target="_blank">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-indent h1 mb-4"></i>
@@ -209,7 +209,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="../services/index.php?link=Social Network">
+              <a href="../services/index.php?link=SocialNetwork" target="_blank">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-share-alt h1 mb-4"></i>
@@ -219,7 +219,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-              <a href="../services/index.php?link=DomainHost">
+              <a href="../services/index.php?link=DomainHost" target="_blank">
                 <div class="card border-0 shadow text-center service">
                   <div class="card-body py-5">
                       <i class="fas fa-server h1 mb-4"></i>
@@ -229,7 +229,7 @@
               </a>
           </div>
           <div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-3 my-3">
-            <a href="../services/index.php?link=SiteBuilder">
+            <a href="../services/index.php?link=SiteBuilder" target="_blank">
               <div class="card border-0 shadow text-center service">
                 <div class="card-body py-5">
                   <i class="fas fa-cogs h1 mb-4"></i>
@@ -339,24 +339,24 @@
           <div class="col-lg-7 mb-5">
               <div class="contact-form p-30">
                   <div id="success"></div>
-                  <form class="form" name="sentMessage" id="contactForm" novalidate="novalidate">
+                  <form class="form" name="sentMessage" id="contactForm" novalidate="novalidate" autocomplete="off">
                       <div class="control-group">
-                          <input type="text" class="form-control" id="name" placeholder="نام شما"
+                          <input type="text" class="form-control" name="name" placeholder="نام شما"
                               required="required" data-validation-required-message="Please enter your name" />
                           <p class="help-block text-danger"></p>
                       </div>
                       <div class="control-group">
-                          <input type="email" class="form-control" id="email" placeholder="ایمیل شما"
-                              required="required" data-validation-required-message="Please enter your email" />
+                          <input type="email" class="form-control" name="email" id="email" placeholder="ایمیل شما"
+                              required="required" data-validation-required-message="Please enter your email"/>
                           <p class="help-block text-danger"></p>
                       </div>
                       <div class="control-group">
-                          <input type="text" class="form-control" id="subject" placeholder="موضوع"
+                          <input type="text" class="form-control" name="p_subject" placeholder="موضوع"
                               required="required" data-validation-required-message="Please enter a subject" />
                           <p class="help-block text-danger"></p>
                       </div>
                       <div class="control-group">
-                          <textarea class="form-control" rows="8" id="message" placeholder="پیام"
+                          <textarea class="form-control" rows="8" name="p_message" placeholder="پیام"
                               required="required"
                               data-validation-required-message="Please enter your message"></textarea>
                           <p class="help-block text-danger"></p>
@@ -368,16 +368,10 @@
                         </div>
                         <button class="btn btn-light py-2 px-4 border" type="submit" id="sendMessageButton">ارسال پیام</button>
                       </div>
-                      <?php
-                        if (isset($_GET['sent'])){
-                      ?>
-                      <div class="alert alert-success text-center w-100 mx-auto mt-3">
+                      <div class="alert alert-success text-center w-100 mx-auto mt-3 d-none">
                             ایمیل با موفقیت ارسال شد
                       </div>
-                      <?php
-                        }
-                      ?>
-                      <div class="alert alert-danger text-center w-100 mx-auto mt-3" style="opacity: 0;">
+                      <div class="alert alert-danger text-center w-100 mx-auto mt-3 d-none">
                             
                       </div>
                   </form>
@@ -401,7 +395,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="copyright-text">
-                        <p>Copyright &copy; 2021, All Right Reserved <a href="index.html">sitebuilder.ir</a></p>
+                        <p>Copyright &copy; 2021, All Right Reserved <a href="">sitebuilder.ir</a></p>
                         <p class="text-muted">Design and developed by Amirhossein Veysi</p>
                     </div>
                 </div>

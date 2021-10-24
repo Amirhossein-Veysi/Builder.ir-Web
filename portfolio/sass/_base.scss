@@ -1,0 +1,30 @@
+body{
+    background: #f4f5f6;
+    direction: rtl;
+    font-family: Iran-Sans;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #777;
+    border-radius: 7px;
+}
+
+@font-face {
+    font-family: Iran-Sans;
+    src: url(../font/IRANSansWeb.ttf);
+}
+
+//Variable
+$base-color: #00c728;
+$base-color-dark: #008d1c;
+$lightgray : #dadada;
+$white: #fff;
+$whitegray: #fafafa;
+$neo: 3px 3px 3px $lightgray, -3px -3px 3px $whitegray;
+$neo-inset: 3px 3px 3px $lightgray inset, -3px -3px 3px $whitegray inset;
+$fs-small: .9rem;

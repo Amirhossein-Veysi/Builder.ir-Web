@@ -52,7 +52,9 @@
                               <img class="d-block w-100" src="../attachs/image/Slides/5_2_FreeSignal.svg" alt="Third slide">
                               <div class="layer layer-2">
                                 <div class="box text-center">
-                                  <p style="line-height: 2.5rem;">باشگاه متخصصین ایران، با محوریت مشاوره، آموزش، پژوهش، تجارت و ایجاد یک شبکه از کارآفرینان و متخصصان، با تشکیل دپارتمان‌های پزشکان، روانشناسان، حسابداران، گردشگران، مترجمان، مدرسان، مدیران، مهندسان، ورزشکاران، هنرمندان و سایر کارشناسان و با هدف هم‌اندیشی، هم‌افزایی و همکاری در بهبود کسب و کارها، همچنین استفاده بهینه از بستر لینکدین و پتانسیل آن، از شما متخصص گرامی دعوت به همکاری می‌نماید.</p>
+                                  <p style="line-height: 2.5rem;">شبکه اجتماعی تخصصی بازارهای مالی ایران، با هدف ایجاد پایگاهی جامع برای گردهمایی و </p>
+                                  <p style="line-height: 2.5rem;">ارتباط مستقیم و مستمر سایر فعالان این حوزه در قالب دپارتمان‌های مختلف مالی و در جهت </p>
+                                  <p style="line-height: 2.5rem;">هم‌اندیشی، هم‌افزایی و همکاری، از شما دوست گرامی دعوت به عمل می‌آورد.</p>
                                 </div>
                               </div>
                             </div>
@@ -60,14 +62,16 @@
                               <img class="d-block w-100" src="../attachs/image/Slides/5_3_FreeSignal.svg" alt="Third slide">
                               <div class="layer layer-3">
                                 <div class="box text-center">
-                                  <p class="w-100" style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی باشگاه شامل موارد ذیل می‌باشد:</p>
-                                  <ul class="mt-5">
-                                    <li>ایجاد اتاق فکر و ایده‌پردازی</li>
-                                    <li>ایجاد سامانه مشاوره و آموزش در سایر رشته‌های تخصصی</li>
-                                    <li> ایجاد کسب و کارهای اینترنتی و نرم‌افزارهای کاربردی پیشنهادی</li>
+                                  <p class="w-100" style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی این شبکه:</p>
+                                  <ul>
+                                    <li>ایجاد سامانه مشاوره، آموزش و ارائه خدمات در سایر حوزه‌های تخصصی بازارهای مالی</li>
+                                    <li>ایجاد سامانه خبری، اطلاع‌رسانی و تحلیلی سایر بازارهای مالی</li>
+                                    <li>ایجاد فضای کار فیزیکی شامل اتاق‌های مشاوره، آموزش، تحلیل و ترید</li>
                                     <li>ایجاد استودیوی تولید محتوای مفید و کاربردی با اهداف مسئولیت اجتماعی، تبلیغاتی و درآمدزایی</li>
-                                    <li>برگزاری همایش و سمینارهای عمومی و تخصصی</li>
-                                    <li>و ...</li>
+                                    <li>امکان‌سنجی ارائه خدمات بلاک‌چین شامل ساخت کوین و توکن اختصاصی </li>
+                                    <li>امکان‌سنجی ارائه خدمات کیف پول، درگاه پرداخت و استخراج رمز ارزها</li>
+                                    <li>امکان‌سنجی اخذ مجوز کارگزاری داخلی و خارجی</li>
+                                    <li>برگزاری گردهمایی و سمینارهای تخصصی و عمومی در سایر حوزه‌های مالی</li>
                                   </ul>
                                 </div>
                               </div>
@@ -106,15 +110,10 @@
                               <input type="text" value="FreeSignal.ir" name="project" class="d-none">
                             </div>
                             <div class="form-group d-flex justify-content-between">
-                              <button class="btn btn-success w-50 mt-2 py-2" type="submit">ارسال</button>
-                              <div class="w-50">
-                                <div class="btn btn-light border mt-2 py-2">تایید ربات نبودن</div>
-                                <div class="dropdown">
-                                  <div class="dropdown-menu shadow d-flex align-items-center">
-                                    <input type="text" class="mx-2" id="cap">
-                                    <canvas width="70px" height="50px"></canvas>
-                                  </div>
-                                </div>
+                              <button class="btn btn-success w-50 mt-3 py-2 px-1" style="height: 55px;" type="submit">ارسال</button>
+                              <div class="w-50 d-flex flex-row-reverse mt-3 px-1" style="height: 55px;">
+                                <canvas width="70px" height="40px" style="background: #e6e6e6;"></canvas>
+                                <input dir="ltr" type="text" class="w-50 text-right px-2" id="cap" style="outline: 0;border: 0;">
                               </div>
                             </div>
                             <?php

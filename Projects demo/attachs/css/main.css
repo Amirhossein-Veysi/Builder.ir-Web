@@ -151,6 +151,12 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   line-height: 2rem;
 }
 
+.carousel .layer-2 .box p {
+  width: 100%;
+  white-space: nowrap;
+  line-height: 2 !important;
+}
+
 .carousel .layer-1 {
   background: rgba(146, 227, 169, 0.6);
 }
@@ -287,7 +293,7 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   text-decoration: none;
 }
 
-@-webkit-keyframes fack {
+@-webkit-keyframes sunset {
   0% {
     opacity: 1;
   }
@@ -296,7 +302,7 @@ p, h1, h2, h3, h4, h5, h6, a, ul {
   }
 }
 
-@keyframes fack {
+@keyframes sunset {
   0% {
     opacity: 1;
   }

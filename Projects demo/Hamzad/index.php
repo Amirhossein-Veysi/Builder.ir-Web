@@ -52,7 +52,9 @@
                               <img class="d-block w-100" src="../attachs/image/Slides/11_2_Hamzad.svg" alt="Third slide">
                               <div class="layer layer-2">
                                 <div class="box text-center">
-                                  <p style="line-height: 2.5rem;">باشگاه متخصصین ایران، با محوریت مشاوره، آموزش، پژوهش، تجارت و ایجاد یک شبکه از کارآفرینان و متخصصان، با تشکیل دپارتمان‌های پزشکان، روانشناسان، حسابداران، گردشگران، مترجمان، مدرسان، مدیران، مهندسان، ورزشکاران، هنرمندان و سایر کارشناسان و با هدف هم‌اندیشی، هم‌افزایی و همکاری در بهبود کسب و کارها، همچنین استفاده بهینه از بستر لینکدین و پتانسیل آن، از شما متخصص گرامی دعوت به همکاری می‌نماید.</p>
+                                  <p style="line-height: 2.5rem;">سامانه جامع و شبکه اجتماعی تخصصی همزادان ایران، با هدف ایجاد پایگاهی جامع برای </p>
+                                  <p style="line-height: 2.5rem;">گردهمایی و ارتباط مستقیم و مستمر سایر همزادان در جهت هم‌اندیشی، هم‌افزایی و همکاری، </p>
+                                  <p style="line-height: 2.5rem;">از شما دوست گرامی دعوت به عمل می‌آورد.</p>
                                 </div>
                               </div>
                             </div>
@@ -60,14 +62,11 @@
                               <img class="d-block w-100" src="../attachs/image/Slides/11_3_Hamzad.svg" alt="Third slide">
                               <div class="layer layer-3">
                                 <div class="box text-center">
-                                  <p class="w-100" style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی باشگاه شامل موارد ذیل می‌باشد:</p>
+                                  <p class="w-100" style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی این شبکه:</p>
                                   <ul class="mt-5">
-                                    <li>ایجاد اتاق فکر و ایده‌پردازی</li>
-                                    <li>ایجاد سامانه مشاوره و آموزش در سایر رشته‌های تخصصی</li>
-                                    <li> ایجاد کسب و کارهای اینترنتی و نرم‌افزارهای کاربردی پیشنهادی</li>
-                                    <li>ایجاد استودیوی تولید محتوای مفید و کاربردی با اهداف مسئولیت اجتماعی، تبلیغاتی و درآمدزایی</li>
-                                    <li>برگزاری همایش و سمینارهای عمومی و تخصصی</li>
-                                    <li>و ...</li>
+                                    <li>امکان‌سنجی ایجاد سرویس آنلاین جستجوی همزاد</li>
+                                    <li>ایجاد پروفایل تقویمی و دسته‌بندی کاربران در گروه‌های روز، ماه و سال تولد</li>
+                                    <li>بهمراه بانک اطلاعاتی جامع طالع‌بینی</li>
                                   </ul>
                                 </div>
                               </div>
@@ -106,15 +105,10 @@
                               <input type="text" value="Hamzad.ir" name="project" class="d-none">
                             </div>
                             <div class="form-group d-flex justify-content-between">
-                              <button class="btn btn-success w-50 mt-2 py-2" type="submit">ارسال</button>
-                              <div class="w-50">
-                                <div class="btn btn-light border mt-2 py-2">تایید ربات نبودن</div>
-                                <div class="dropdown">
-                                  <div class="dropdown-menu shadow d-flex align-items-center">
-                                    <input type="text" class="mx-2" id="cap">
-                                    <canvas width="70px" height="50px"></canvas>
-                                  </div>
-                                </div>
+                              <button class="btn btn-success w-50 mt-3 py-2 px-1" style="height: 55px;" type="submit">ارسال</button>
+                              <div class="w-50 d-flex flex-row-reverse mt-3 px-1" style="height: 55px;">
+                                <canvas width="70px" height="40px" style="background: #e6e6e6;"></canvas>
+                                <input dir="ltr" type="text" class="w-50 text-right px-2" id="cap" style="outline: 0;border: 0;">
                               </div>
                             </div>
                             <?php

@@ -39,6 +39,15 @@
         line-height: 2rem;
       }
     }
+    &-2{
+      .box{
+        p{
+          width: 100%;
+          white-space: nowrap;
+          line-height: 2 !important;
+        }
+      }
+    }
   }
   @for $i from 1 through 6 {
     .layer-#{$i}{

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hit.ir</title>
-    <link rel="shortcut icon" href="image/icon.jpg" />
+    <link rel="shortcut icon" href="../attachs/image/icon.jpg" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
     <link rel="stylesheet" href="../attachs/css/main.css">
@@ -21,7 +21,7 @@
                 <div class="navbar-brand position-absolute">
                   <a href="https://1353.ir" target="_blank"><img src="../attachs/image/Home.png" width="50px" height="50px"></a>
                 </div>
-                <p class="h2 mx-auto">سامانه جامع اطلاع‌رسانی</p>
+                <p class="h2 mx-auto">سامانه اطلاع‌رسانی</p>
               </nav>
             </div>
         </div>
@@ -52,7 +52,11 @@
                               <img class="d-block w-100" src="../attachs/image/Slides/1_2_Hit.svg" alt="Third slide">
                               <div class="layer layer-2">
                                 <div class="box text-center">
-                                  <p style="line-height: 2.5rem;">باشگاه متخصصین ایران، با محوریت مشاوره، آموزش، پژوهش، تجارت و ایجاد یک شبکه از کارآفرینان و متخصصان، با تشکیل دپارتمان‌های پزشکان، روانشناسان، حسابداران، گردشگران، مترجمان، مدرسان، مدیران، مهندسان، ورزشکاران، هنرمندان و سایر کارشناسان و با هدف هم‌اندیشی، هم‌افزایی و همکاری در بهبود کسب و کارها، همچنین استفاده بهینه از بستر لینکدین و پتانسیل آن، از شما متخصص گرامی دعوت به همکاری می‌نماید.</p>
+                                  <p style="line-height: 2.5rem;">پایگاه جامع خبری، اطلاع‌رسانی ایرانیان در سایر حوزه‌های اجتماعی</p>
+                                  <p style="line-height: 2.5rem;">همراه با پیاده‌سازی یک طرح کارآفرینی مجازی</p>
+                                  <br>
+                                  <p>در گستره ملی و سراسری</p>
+                                  <p>با امکان جذب، آموزش و پشتیبانی همکاران به تفکیک استان، شهرستان و شهر</p>
                                 </div>
                               </div>
                             </div>
@@ -60,13 +64,11 @@
                               <img class="d-block w-100" src="../attachs/image/Slides/1_3_Hit.svg" alt="Third slide">
                               <div class="layer layer-3">
                                 <div class="box text-center">
-                                  <p class="w-100" style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی باشگاه شامل موارد ذیل می‌باشد:</p>
+                                  <p class="w-100" style="font-size: 1.25rem;">برخی از اهداف و فعالیت‌های کلی طرح:</p>
                                   <ul class="mt-5">
-                                    <li>ایجاد اتاق فکر و ایده‌پردازی</li>
-                                    <li>ایجاد سامانه مشاوره و آموزش در سایر رشته‌های تخصصی</li>
-                                    <li> ایجاد کسب و کارهای اینترنتی و نرم‌افزارهای کاربردی پیشنهادی</li>
-                                    <li>ایجاد استودیوی تولید محتوای مفید و کاربردی با اهداف مسئولیت اجتماعی، تبلیغاتی و درآمدزایی</li>
-                                    <li>برگزاری همایش و سمینارهای عمومی و تخصصی</li>
+                                    <li>سامانه خبری، اطلاع‌رسانی سایر مناطق کشور</li>
+                                    <li>بانک اطلاعات مشاغل عمومی و تخصصی</li>
+                                    <li>سامانه نیازمندی‌های عمومی و تخصصی</li>
                                     <li>و ...</li>
                                   </ul>
                                 </div>
@@ -106,15 +108,10 @@
                               <input type="text" value="Hit.ir" name="project" class="d-none">
                             </div>
                             <div class="form-group d-flex justify-content-between">
-                              <button class="btn btn-success w-50 mt-2 py-2" type="submit">ارسال</button>
-                              <div class="w-50">
-                                <div class="btn btn-light border mt-2 py-2">تایید ربات نبودن</div>
-                                <div class="dropdown">
-                                  <div class="dropdown-menu shadow d-flex align-items-center">
-                                    <input type="text" class="mx-2" id="cap">
-                                    <canvas width="70px" height="50px"></canvas>
-                                  </div>
-                                </div>
+                              <button class="btn btn-success w-50 mt-3 py-2 px-1" style="height: 55px;" type="submit">ارسال</button>
+                              <div class="w-50 d-flex flex-row-reverse mt-3 px-1" style="height: 55px;">
+                                <canvas width="70px" height="40px" style="background: #e6e6e6;"></canvas>
+                                <input dir="ltr" type="text" class="w-50 text-right px-2" id="cap" style="outline: 0;border: 0;">
                               </div>
                             </div>
                             <?php
