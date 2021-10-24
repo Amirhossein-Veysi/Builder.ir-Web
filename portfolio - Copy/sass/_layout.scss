@@ -17,7 +17,7 @@
                 border: 1px solid transparent;
                 box-shadow: $neo;
                 border-radius: 10px;
-                transition: .2s;
+                transition: .3s;
                 overflow: hidden;
 
                 a {
@@ -30,8 +30,7 @@
                         top: -60px;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        font-size: 13px;
-                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
                         transition: .3s;
                     }
 
@@ -47,7 +46,7 @@
 
                 &:hover,
                 &.active {
-                    box-shadow: 3px 3px 3px $lightgray, -3px -3px 3px #fff, 3px 3px 3px $lightgray inset, -3px -3px 3px #fff inset;
+                    box-shadow: 3px 3px 3px $lightgray inset, -3px -3px 3px #fff inset;
 
                     span {
                         top: 50%;
@@ -74,12 +73,10 @@ section {
 
 // Hero
 .hero {
-    img {
-        &:first-child {
-            width: 65%;
-            border-radius: 7% 20% 7% 20%;
-            box-shadow: $neo;
-        }
+    .man-img {
+        width: 75%;
+        border-radius: 7% 20% 7% 20%;
+        box-shadow: $neo;
     }
 
     .shapes {
@@ -343,38 +340,38 @@ section {
         }
     }
 
-    .carousel{
+    .carousel {
         animation: zoom .2s ease-in;
     }
 }
 
 //Work Modal
-#workModal{
+#workModal {
     @include modal;
 
-    .col-12{
+    .col-12 {
         background: #f4f5f6;
         height: 90%;
         overflow: auto;
 
-        .head{
+        .head {
             background: #f4f5f6;
             position: sticky;
             top: 0;
 
-            .close{
+            .close {
                 position: relative;
                 width: 40px;
                 height: 40px;
                 background: #eee;
                 cursor: pointer;
                 transition: .3s;
-    
-                &:hover{
+
+                &:hover {
                     background: $lightgray;
                 }
-    
-                i{
+
+                i {
                     position: absolute;
                     left: 50%;
                     top: 50%;
@@ -382,8 +379,9 @@ section {
                 }
             }
         }
-        .poster{
-            img{
+
+        .poster {
+            img {
                 padding: 5px;
                 box-shadow: $neo;
                 border-radius: 2rem;
@@ -392,7 +390,7 @@ section {
     }
 }
 
-.section-control{
+.section-control {
     div {
         width: 40px;
         height: 40px;
@@ -402,16 +400,16 @@ section {
         cursor: pointer;
         transition: .3s;
 
-        &:hover{
+        &:hover {
             background: $base-color-dark;
         }
     }
 
-    .prev-section{
+    .prev-section {
         right: 0;
     }
 
-    .next-section{
+    .next-section {
         left: 0;
     }
 }

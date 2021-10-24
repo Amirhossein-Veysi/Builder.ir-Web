@@ -72,9 +72,9 @@ $(document).ready(function () {
 
     //Function
     function wrtMe() {
-        $('.about-txt').typeIt('برنامه نویس وب', .3).pauseIt(1).deleteIt($('.about-txt').html().length, .1)
-            .typeIt(' طراح وب', .3).pauseIt(1).deleteIt($('.about-txt').html().length, .1)
-            .typeIt(' انسان :|', .3).pauseIt(1).deleteIt($('.about-txt').html().length, .1);
+        $('.about-txt').typeIt('مشاور و مربی کسب‌وکار', .3).pauseIt(1).deleteIt($('.about-txt').html().length, .1)
+            .typeIt(' مدیر رویداد و جامعه‌ساز', .3).pauseIt(1).deleteIt($('.about-txt').html().length, .1)
+            .typeIt(' مجری کسب‌وکارهای آنلاین', .3).pauseIt(1).deleteIt($('.about-txt').html().length, .1);
         setTimeout(wrtMe, 5000);
     }
 

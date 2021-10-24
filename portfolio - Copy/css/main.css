@@ -148,8 +148,8 @@ a:hover {
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
   border-radius: 10px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .3s;
+  transition: .3s;
   overflow: hidden;
 }
 
@@ -165,8 +165,7 @@ a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -183,8 +182,8 @@ a:hover {
 }
 
 .header header .nav .nav-item:hover, .header header .nav .nav-item.active {
-  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fff, 3px 3px 3px #dadada inset, -3px -3px 3px #fff inset;
-          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fff, 3px 3px 3px #dadada inset, -3px -3px 3px #fff inset;
+  -webkit-box-shadow: 3px 3px 3px #dadada inset, -3px -3px 3px #fff inset;
+          box-shadow: 3px 3px 3px #dadada inset, -3px -3px 3px #fff inset;
 }
 
 .header header .nav .nav-item:hover span, .header header .nav .nav-item.active span {
@@ -205,8 +204,8 @@ section.active {
   display: block;
 }
 
-.hero img:first-child {
-  width: 65%;
+.hero .man-img {
+  width: 75%;
   border-radius: 7% 20% 7% 20%;
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
