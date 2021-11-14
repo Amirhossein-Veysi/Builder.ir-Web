@@ -206,7 +206,7 @@ section.active {
 
 .hero .man-img {
   width: 75%;
-  border-radius: 20% 7% 20% 7%;
+  border-radius: 7% 20% 7% 20%;
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
