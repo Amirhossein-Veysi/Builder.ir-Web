@@ -27,6 +27,10 @@ img {
   -webkit-user-drag: none;
 }
 
+.rounded-lg {
+  border-radius: .5rem;
+}
+
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);

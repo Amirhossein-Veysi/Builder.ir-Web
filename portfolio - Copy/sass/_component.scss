@@ -6,6 +6,10 @@ img {
     -webkit-user-drag: none;
 }
 
+.rounded-lg{
+    border-radius: .5rem;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
