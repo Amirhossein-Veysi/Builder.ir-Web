@@ -201,17 +201,11 @@ section {
     }
 }
 
-//Service
-.service{
-    .item {
-        
-    }
-}
-
 //Works
 .works {
     .work {
         position: relative;
+        aspect-ratio: 1.5;
 
         img {
             width: 90%;

@@ -330,6 +330,7 @@ section.active {
 
 .works .work {
   position: relative;
+  aspect-ratio: 1.5;
 }
 
 .works .work img {
