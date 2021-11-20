@@ -304,6 +304,10 @@ section.active {
   position: relative;
 }
 
+.resume .card-body .experience p {
+  width: 100%;
+}
+
 .resume .card-body .experience::before {
   content: '';
   position: absolute;
