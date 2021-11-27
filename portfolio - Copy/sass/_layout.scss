@@ -173,6 +173,10 @@ section {
       .experience {
         position: relative;
 
+        p{
+          margin-bottom: 0;
+        }
+
         &::before {
           content: "";
           position: absolute;
