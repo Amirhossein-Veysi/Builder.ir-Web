@@ -34,8 +34,10 @@ $(document).ready(function () {
     }
 
     function deWorkZomItClckHandler() {
-        $('#galleryModal').removeClass('d-none');
         event.preventDefault();
+        $('#galleryModal').removeClass('d-none');
+        console.log($(this).closest('.layer').prev());
+        $('#galleryModal img').attr('src', $(this).closest('.layer').prev().attr('src'))
     }
 
     function deWorkDtilsClckHandler() {
