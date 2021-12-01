@@ -350,6 +350,25 @@ section {
 
   .carousel {
     animation: zoom 0.2s ease-in;
+
+    .carousel-item{
+      background: #cecece;
+      border-radius: 5px;
+
+      .carousel-caption{
+        background: #333333a1;
+        padding: 7px;
+        border-radius: 4px;
+
+        p{
+          margin-bottom: 0;
+        }
+      }
+
+      img{
+        aspect-ratio: 1.6;
+      }
+    }
   }
 }
 
