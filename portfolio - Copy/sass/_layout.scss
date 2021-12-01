@@ -204,6 +204,13 @@ section {
   }
 }
 
+// Service
+.service{
+  .item text, .item img{
+    box-shadow: $neo;
+  }
+}
+
 //Works
 .works {
   .work {

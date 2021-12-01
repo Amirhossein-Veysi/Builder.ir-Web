@@ -332,6 +332,11 @@ section.active {
           transform: translateX(40%);
 }
 
+.service .item text, .service .item img {
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+}
+
 .works .work {
   position: relative;
   aspect-ratio: 1.5;
