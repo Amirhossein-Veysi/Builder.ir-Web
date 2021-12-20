@@ -283,7 +283,7 @@ section.active {
 }
 
 .about .border-img {
-  width: 85%;
+  width: 60%;
   border-radius: 1.25rem;
   border: 5px solid #f4f5f6;
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
@@ -339,6 +339,12 @@ section.active {
   border-radius: 50%;
   -webkit-transform: translateX(40%);
           transform: translateX(40%);
+}
+
+.service .border-img img {
+  border: 5px solid #f4f5f6;
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
 
 .service .item text,

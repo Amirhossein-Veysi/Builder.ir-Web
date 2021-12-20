@@ -145,7 +145,7 @@ section {
 //About
 .about {
   .border-img {
-    width: 85%;
+    width: 60%;
     border-radius: 1.25rem;
     border: 5px solid #f4f5f6;
     box-shadow: $neo;
@@ -210,6 +210,13 @@ section {
 
 // Service
 .service {
+  .border-img {
+    img{
+      border: 5px solid #f4f5f6;
+      box-shadow: $neo;
+    }
+  }
+
   .item text,
   .item img {
     box-shadow: $neo;
