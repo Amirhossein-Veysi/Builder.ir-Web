@@ -341,23 +341,27 @@ section.active {
           transform: translateX(40%);
 }
 
-.service .item text, .service .item img {
+.service .item text,
+.service .item img {
   -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
 
-.works .work, .blog .work {
+.works .work,
+.blog .work {
   position: relative;
   aspect-ratio: 1.5;
 }
 
 @media only screen and (min-width: 992px) {
-  .works .work, .blog .work {
+  .works .work,
+  .blog .work {
     width: 14.28%;
   }
 }
 
-.works .work img, .blog .work img {
+.works .work img,
+.blog .work img {
   width: 90%;
   border: 7px solid transparent;
   border-radius: 1.25rem;
@@ -365,13 +369,15 @@ section.active {
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
 
-.works .work img:hover + .layer, .blog .work img:hover + .layer {
+.works .work img:hover + .layer,
+.blog .work img:hover + .layer {
   opacity: 1;
   width: 75%;
   height: 80%;
 }
 
-.works .work .layer, .blog .work .layer {
+.works .work .layer,
+.blog .work .layer {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -386,13 +392,15 @@ section.active {
   transition: 0.3s;
 }
 
-.works .work .layer:hover, .blog .work .layer:hover {
+.works .work .layer:hover,
+.blog .work .layer:hover {
   opacity: 1;
   width: 75%;
   height: 80%;
 }
 
-.works .work .layer div, .blog .work .layer div {
+.works .work .layer div,
+.blog .work .layer div {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -400,7 +408,8 @@ section.active {
           transform: translate(-50%, -50%);
 }
 
-.works .work .layer div a, .blog .work .layer div a {
+.works .work .layer div a,
+.blog .work .layer div a {
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -441,6 +450,11 @@ section.active {
 #contact form button {
   width: 130px;
   height: 50px;
+}
+
+#contact form .captcha canvas {
+  -webkit-box-shadow: 0 0 5px #ccc inset;
+          box-shadow: 0 0 5px #ccc inset;
 }
 
 .gallery-modal {

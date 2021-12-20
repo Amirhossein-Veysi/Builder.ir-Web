@@ -129,7 +129,7 @@ section {
     }
   }
 
-  .header{
+  .header {
     font-family: Nastaliq;
   }
 
@@ -177,7 +177,7 @@ section {
       .experience {
         position: relative;
 
-        p{
+        p {
           margin-bottom: 0;
         }
 
@@ -209,14 +209,16 @@ section {
 }
 
 // Service
-.service{
-  .item text, .item img{
+.service {
+  .item text,
+  .item img {
     box-shadow: $neo;
   }
 }
 
 //Works & Blog
-.works, .blog {
+.works,
+.blog {
   .work {
     position: relative;
     aspect-ratio: 1.5;
@@ -286,7 +288,7 @@ section {
     }
 
     input,
-    textarea {
+    textarea{
       border: 0;
       outline: 0;
       background: transparent;
@@ -301,6 +303,12 @@ section {
     button {
       width: 130px;
       height: 50px;
+    }
+
+    .captcha {
+      canvas {
+        box-shadow: 0 0 5px #ccc inset;
+      }
     }
   }
 }
@@ -329,21 +337,21 @@ section {
   .carousel {
     animation: zoom 0.2s ease-in;
 
-    .carousel-item{
+    .carousel-item {
       background: #cecece;
       border-radius: 5px;
 
-      .carousel-caption{
+      .carousel-caption {
         background: #333333a1;
         padding: 7px;
         border-radius: 4px;
 
-        p{
+        p {
           margin-bottom: 0;
         }
       }
 
-      img{
+      img {
         aspect-ratio: 1.6;
       }
     }
