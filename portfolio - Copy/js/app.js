@@ -124,7 +124,7 @@ function addWorks() {
                 <img src="img/Projects/${el.imageUrl}">
                 <div class="layer">
                     <div class="w-100 d-flex justify-content-center">
-                        <a href="#x" class="details mx-3 bg-white text-decoration-none rounded">
+                        <a href="https://1353.ir/${el.url == "1353" ? "" : el.url}" class="details mx-3 bg-white text-decoration-none rounded">
                             <i class="fas fa-link"></i>
                         </a>
                         <a href="#x" class="zoom-it mx-3 bg-white text-decoration-none rounded" data-order="${i}">
