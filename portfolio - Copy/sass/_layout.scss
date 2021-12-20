@@ -215,8 +215,8 @@ section {
   }
 }
 
-//Works
-.works {
+//Works & Blog
+.works, .blog {
   .work {
     position: relative;
     aspect-ratio: 1.5;
@@ -272,39 +272,6 @@ section {
       }
     }
   }
-}
-
-//Blog
-#blog .post {
-  width: 85%;
-  box-shadow: $neo;
-  background: #f1f1f1;
-  position: relative;
-  border-radius: 1.25rem;
-  margin: auto;
-}
-
-#blog .post .post-image {
-  width: 85%;
-  background: transparent;
-}
-
-#blog .post .post-image .post-intro {
-  padding: 10px;
-  background: #f4f5f6;
-  border-radius: 1.25rem;
-  box-shadow: $neo-inset;
-}
-
-#blog .post .post-image img {
-  border: 5px solid #f1f1f1;
-  border-radius: 1.25rem;
-  box-shadow: $neo;
-}
-
-#blog .post .post-content {
-  padding: 30px 40px;
-  padding-top: 0;
 }
 
 //Contact

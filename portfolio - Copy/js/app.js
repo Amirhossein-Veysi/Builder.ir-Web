@@ -145,7 +145,7 @@ function addWorks() {
       </div>
       `;
 
-      $("#works .row").append(work);
+      $("#works .row, #blog .row").append(work);
       $('#gallery .carousel-inner').append(img);
     });
   });
