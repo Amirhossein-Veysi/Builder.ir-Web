@@ -20,8 +20,8 @@ body {
 }
 
 @font-face {
-  font-family: Nastaliq;
-  src: url(../font/IranNastaliq.ttf);
+  font-family: Narm;
+  src: url(../font/Narm.ttf);
 }
 
 img {
@@ -271,7 +271,7 @@ section.active {
 }
 
 .hero .header {
-  font-family: Nastaliq;
+  font-family: Narm;
 }
 
 .hero ul {
