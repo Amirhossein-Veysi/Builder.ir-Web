@@ -353,6 +353,10 @@ section.active {
           box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
 
+.service .item img {
+  width: 10%;
+}
+
 .works .work,
 .blog .work {
   position: relative;
